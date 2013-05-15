@@ -1,0 +1,41 @@
+<Widget>
+    <Kind>4</Kind>
+    <Name>FPS SLIDER</Name>
+    <Value>150.258895874</Value>
+</Widget>
+<Widget>
+    <Kind>6</Kind>
+    <Name>KINECT PIXEL RANGE</Name>
+    <HighValue>192.551025391</HighValue>
+    <LowValue>166.530609131</LowValue>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>KINECT MOTOR ANGLE</Name>
+    <Value>3.061222076</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WINSIZE</Name>
+    <Value>10.122449875</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MAX FEATURES</Name>
+    <Value>260.943878174</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>QUALITY LEVEL</Name>
+    <Value>0.122448981</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MIN DISTANCE</Name>
+    <Value>6.862857342</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MOTION SCALE</Name>
+    <Value>0.100000001</Value>
+</Widget>
