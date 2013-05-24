@@ -27,6 +27,9 @@
 		933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */; };
 		9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */; };
+		D9ACF1A2174C6F460072BE24 /* ofxParticle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */; };
+		D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -209,6 +212,12 @@
 		9dbd717072c35d324e1016697d7aa720 /* Distance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Distance.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp; sourceTree = SOURCE_ROOT; };
 		9ff9126184dfbde8a912373ebe9d2f9d /* highgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = highgui.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AvatarParticle.cpp; sourceTree = "<group>"; };
+		D92C2D18174F34FB0065EE47 /* AvatarParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarParticle.h; sourceTree = "<group>"; };
+		D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle2D.cpp; sourceTree = "<group>"; };
+		D9ACF19F174C6F460072BE24 /* ofxParticle2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle2D.h; sourceTree = "<group>"; };
+		D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle3D.cpp; sourceTree = "<group>"; };
+		D9ACF1A1174C6F460072BE24 /* ofxParticle3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle3D.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -699,6 +708,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				D9ACF19C174C6F460072BE24 /* ofxParticles */,
 				a0b90d3b0adb9c1716816714bf7f212b /* ofxOpenCv */,
 				1f4fb5c423662b96adfdcc0badec1cb0 /* ofxXmlSettings */,
 				6025faf6414c2ca589764d26b59a2f04 /* ofxCv */,
@@ -739,6 +749,26 @@
 			name = "3rd party frameworks";
 			sourceTree = "<group>";
 		};
+		D9ACF19C174C6F460072BE24 /* ofxParticles */ = {
+			isa = PBXGroup;
+			children = (
+				D9ACF19D174C6F460072BE24 /* src */,
+			);
+			name = ofxParticles;
+			path = ../../../addons/ofxParticles;
+			sourceTree = "<group>";
+		};
+		D9ACF19D174C6F460072BE24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */,
+				D9ACF19F174C6F460072BE24 /* ofxParticle2D.h */,
+				D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */,
+				D9ACF1A1174C6F460072BE24 /* ofxParticle3D.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +805,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */,
+				D92C2D18174F34FB0065EE47 /* AvatarParticle.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1120,6 +1152,9 @@
 				3459f3becfe8cb6a6683889e1690f01a /* usb_libusb10.c in Sources */,
 				6205df95c4d4cd36cc5a274c35e3899c /* Tween.cpp in Sources */,
 				124bb58efbc1472d607d739b448f711e /* Tweenzor.cpp in Sources */,
+				D9ACF1A2174C6F460072BE24 /* ofxParticle2D.cpp in Sources */,
+				D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */,
+				D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

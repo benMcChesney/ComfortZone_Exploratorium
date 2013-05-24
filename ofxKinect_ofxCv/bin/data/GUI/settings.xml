@@ -1,41 +1,83 @@
 <Widget>
     <Kind>4</Kind>
     <Name>FPS SLIDER</Name>
-    <Value>150.258895874</Value>
+    <Value>106.459754944</Value>
 </Widget>
 <Widget>
     <Kind>6</Kind>
     <Name>KINECT PIXEL RANGE</Name>
-    <HighValue>192.551025391</HighValue>
-    <LowValue>166.530609131</LowValue>
+    <HighValue>255.000000000</HighValue>
+    <LowValue>178.239807129</LowValue>
+</Widget>
+<Widget>
+    <Kind>6</Kind>
+    <Name>CV BLOB SIZE</Name>
+    <HighValue>230400.000000000</HighValue>
+    <LowValue>30908.082031250</LowValue>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>KINECT MOTOR ANGLE</Name>
-    <Value>3.061222076</Value>
+    <Value>-10.102041245</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>WINSIZE</Name>
-    <Value>10.122449875</Value>
+    <Name>FLOW SCALING</Name>
+    <Value>0.550000131</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>MAX FEATURES</Name>
-    <Value>260.943878174</Value>
+    <Name>WINDOW SIZE</Name>
+    <Value>43.107143402</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>QUALITY LEVEL</Name>
-    <Value>0.122448981</Value>
+    <Name>NUM LEVELS</Name>
+    <Value>7.964285374</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>MIN DISTANCE</Name>
-    <Value>6.862857342</Value>
+    <Name>PYRAMID SCALE</Name>
+    <Value>0.122857146</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>MOTION SCALE</Name>
-    <Value>0.100000001</Value>
+    <Name>POLY N</Name>
+    <Value>3.673469543</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>POLY SIGMA</Name>
+    <Value>3.424948692</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>NUM ITERATIONS</Name>
+    <Value>1.367347002</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>USE GAUSSIAN</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>NUM PARTICLES</Name>
+    <Value>4234.847167969</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MIN PARTICLE FORCE</Name>
+    <Value>3.910459042</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>PARTICLE FBO FADE</Name>
+    <Value>14.311223984</Value>
+</Widget>
+<Widget>
+    <Kind>6</Kind>
+    <Name>PARTICLE LIFE</Name>
+    <HighValue>25.714286804</HighValue>
+    <LowValue>10.000000000</LowValue>
 </Widget>

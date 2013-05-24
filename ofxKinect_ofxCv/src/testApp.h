@@ -5,6 +5,7 @@
 #include "ofxCv.h"
 #include "ofxKinect.h"
 #include "ofxUI.h"
+#include "AvatarParticle.h"
 
 class testApp : public ofBaseApp{
 
@@ -25,9 +26,9 @@ class testApp : public ofBaseApp{
     
         ofxCvColorImage colorImg;
         
-        ofImage grayImage; // grayscale depth image
-        ofImage grayThreshNear; // the near thresholded image
-        ofImage grayThreshFar; // the far thresholded image
+        ofxCvGrayscaleImage grayImage; // grayscale depth image
+        ofxCvGrayscaleImage grayThreshNear; // the near thresholded image
+        ofxCvGrayscaleImage grayThreshFar; // the far thresholded image
     
         ofxKinect kinect;
         int nearThreshold;
@@ -44,13 +45,29 @@ class testApp : public ofBaseApp{
     
     
         //Optical Flow Stuff
-        //ofxCv::FlowFarneback farneback;
-        ofxCv::FlowPyrLK flow;
-        float qualityLevel , minDistance ;
-        int winSize , maxLevels , maxFeatures ;
- 
-        float motionScale ; 
+        ofxCv::FlowFarneback flow;
+        //ofxCv::FlowPyrLK flow;
+        float polySigma , polyN , pyramidScale;
+        int windowSize , numLevels , numIterations ;
+        bool bUseGaussian ;
+        float motionScale ;
     
-  
+        float minBlobSize , maxBlobSize ;
+    
+        void customFlowDraw ( ) ;
+        float flowScaling ;
+        float minParticleForce ;
+        vector<AvatarParticle*> particles ;
+        int maxParticles ;
+
+        ofPoint particleGravity ;
+        ofPoint particleLife ;
+
+        ofFbo particleFbo ;
+        float particleFboFade ;
+
+
+        ofImage particleSprite ;
+
 
 };
