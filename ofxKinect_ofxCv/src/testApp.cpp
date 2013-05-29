@@ -141,22 +141,54 @@ void testApp::draw(){
         //grayImage.draw( 0 , 0 ) ;
         //kinect.draw( 0 , kinect.getHeight() ) ;
         vector<vector<cv::Point> > contours = contourFinder.getContours() ;
+        
     
+        
         
 
         for ( int c = 0 ; c < contours.size() ; c++ )
         {
-            ofPolyline polyline ;
+  //          ofPolyline polyline ;
+            ofPath path ;
+            
             for ( int i = 0 ; i < contours[c].size() ;i++ )
             {
-                
+               
                 cv::Point p = contours[c][i] ;
-                polyline.addVertex( p.x , p.y ) ;
+                if ( i == 0 )
+                    path.moveTo( p.x , p.y ) ;
+                else
+                    path.lineTo( p.x , p.y ) ;
+//                polyline.addVertex( p.x , p.y ) ;
             }
             
-            ofSetColor( ofColor::fromHsb( ofGetFrameNum() % 255 , 255 , 255 )  ) ;
+            path.close() ; 
+            ofColor fill = ofColor::fromHsb( ofGetFrameNum() % 255 , 255 , 255 )  ;
             ofSetLineWidth( 4 ) ;
-            polyline.draw() ;
+            path.setFillColor( fill ) ; 
+            path.setStrokeColor(ofColor::white ) ;
+            path.setStrokeWidth( 4.0f ) ;
+            path.setFilled( true ) ;
+            path.draw( ) ;
+            /*
+            for ( int s = 0 ; s < 5 ; s++ )
+            {
+                path.scale( 1.1 , 1.1 ) ;
+                ofPolyline polyline = path.getOutline()[0] ;
+                ofRectangle bounds = polyline.getBoundingBox() ;
+                cout << "bounds :" << bounds.x << " , " << bounds.y << " , " << bounds.width << " , " << bounds.height << endl;
+                
+                bounds.width += -bounds.x ;
+                bounds.height += -bounds.y ;
+                ofTranslate( bounds.getWidth() / -2 , polyline.getBoundingBox().getHeight() / -2) ;
+            
+                path.setFilled( false ) ;
+                path.draw( ) ;
+            }*/
+         //   polyline.setClosed(true) ;
+          
+            ofFill() ; 
+            //polyline.draw() ;
             ofSetLineWidth( 1 ) ;
         }
         //contourFinder.draw() ;

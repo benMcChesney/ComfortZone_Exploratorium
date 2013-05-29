@@ -76,10 +76,11 @@ void Landscape::draw( )
                         _diff = midPoint - abs(_diff) ;
                         if ( _diff < 0 )
                             _diff *= -1 ;
-                        float _heightFactor = _diff * landscapeFactor ; // * landscapeFactor ;
+                        float _heightFactor = _diff  * landscapeFactor ; // * landscapeFactor ;
+                        
                         ofVec2f pointAhead = point ;
-                        point.y *= ( heightFactor * landscapeHeight * (normalZ) ) ;
-                        pointAhead.y *= ( _heightFactor * landscapeHeight * (lastNormalZ) ) ;
+                        point.y *= ( heightFactor ) * landscapeHeight * (normalZ)  ;
+                        pointAhead.y *= ( _heightFactor )  * landscapeHeight * (lastNormalZ)  ;
                         ofPushMatrix() ;
                         ofLine( prevPoint , point ) ;
                         ofLine( point.x , point.y , 0 , pointAhead.x , pointAhead.y , -zSpacing ) ;
