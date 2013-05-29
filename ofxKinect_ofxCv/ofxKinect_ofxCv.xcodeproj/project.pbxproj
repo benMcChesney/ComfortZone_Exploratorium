@@ -30,6 +30,7 @@
 		D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */; };
 		D9ACF1A2174C6F460072BE24 /* ofxParticle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */; };
 		D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */; };
+		D9BE88DC17530E0B0075416A /* Landscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BE88DA17530E0B0075416A /* Landscape.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -218,6 +219,8 @@
 		D9ACF19F174C6F460072BE24 /* ofxParticle2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle2D.h; sourceTree = "<group>"; };
 		D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle3D.cpp; sourceTree = "<group>"; };
 		D9ACF1A1174C6F460072BE24 /* ofxParticle3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle3D.h; sourceTree = "<group>"; };
+		D9BE88DA17530E0B0075416A /* Landscape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Landscape.cpp; sourceTree = "<group>"; };
+		D9BE88DB17530E0B0075416A /* Landscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Landscape.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -807,6 +810,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
 				D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */,
 				D92C2D18174F34FB0065EE47 /* AvatarParticle.h */,
+				D9BE88DA17530E0B0075416A /* Landscape.cpp */,
+				D9BE88DB17530E0B0075416A /* Landscape.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1155,6 +1160,7 @@
 				D9ACF1A2174C6F460072BE24 /* ofxParticle2D.cpp in Sources */,
 				D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */,
 				D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */,
+				D9BE88DC17530E0B0075416A /* Landscape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

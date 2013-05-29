@@ -40,7 +40,14 @@ void testApp::setup(){
     particleSprite.resize( 8 , 8 ) ;
     particleSprite.setAnchorPercent( 0.5 , 0.5 ) ;
     
+    landscape.setup() ;
     
+    ofSetVerticalSync( true ) ;
+    ofSetFrameRate( 60 );
+    
+    contourFinder.setFindHoles(true) ;
+    
+    cam.enableMouseInput(); 
 }
 
 //--------------------------------------------------------------
@@ -73,6 +80,7 @@ void testApp::update(){
         flow.calcOpticalFlow( smallImage ) ;        
     }
     
+    landscape.update() ; 
     /*
         for ( p = particles.begin() ; p != particles.end() ; p++ )
     {
@@ -90,6 +98,7 @@ void testApp::update(){
         while ( p != particles.end() )
         {
             (*p)->update() ;
+            (*p)->p.z += zGravity ; 
             if ( (*p)->frameLife < 0 )
             {
                 delete ( *p ) ;
@@ -115,8 +124,16 @@ void testApp::draw(){
     ofBackground( 0 , 0 ,0 ) ; 
     ofSetColor( 255 ) ;
     
+    cam.begin() ;
+        ofTranslate( -ofGetWidth()/2 , ofGetHeight()/-2 ) ;
+    
     ofPushMatrix() ;
-        ofVec2f offset = ofVec2f( (ofGetWidth()- kinect.getWidth() )/2  , ( ofGetHeight() - kinect.getHeight()  ) /2  ) ; 
+    
+    particleFbo.begin() ;
+    ofSetColor( 0 , 0 , 0, particleFboFade ) ;
+    ofRect( 0 , 0 , ofGetWidth() , ofGetHeight() ) ;
+    
+        ofVec2f offset = ofVec2f( (ofGetWidth()- kinect.getWidth() )/2  , ( ofGetHeight() - kinect.getHeight()  ) /2  ) ;
         ofTranslate( offset ) ;
     
         //ofTranslate( 275 , 10 ) ;
@@ -146,9 +163,7 @@ void testApp::draw(){
         customFlowDraw( ) ;
     
         ofTranslate( offset * -1 ) ;
-        particleFbo.begin() ;
-        ofSetColor( 0 , 0 , 0, particleFboFade ) ;
-        ofRect( 0 , 0 , ofGetWidth() , ofGetHeight() ) ;
+       
     
         ofSetColor( ofColor::fromHsb( (ofGetFrameNum()* 3) % 255 , 255 , 255 )  ) ;
         ofTranslate( offset ) ;
@@ -158,31 +173,39 @@ void testApp::draw(){
         while ( p != particles.end() )
         {
             //(*p)->draw( ) ;
-            particleSprite.draw( (*p)->x , (*p)->y ) ; 
+            particleSprite.draw( (*p)->p ) ;
             p++ ;
         }
         ofEnableAlphaBlending() ;
         particleFbo.end() ;
     
         ofSetColor( 255 ) ;
-        particleFbo.draw( 0 , 0 ) ;
+        ofPushMatrix() ;
+            ofTranslate(0 , particleFbo.getHeight() ) ;
+            ofScale( 1 , -1 ) ;
+            particleFbo.draw( 0 , 0 ) ;
+        ofPopMatrix() ;
 
     ofPopMatrix() ;
 
+    landscape.draw( ) ; 
+    cam.end() ; 
     
+    ofPopMatrix() ;
     
-        
     stringstream ss ;
     ss << " PARTICLES : "  << particles.size() << " / " << maxParticles << endl ; 
     
-    ofDrawBitmapStringHighlight( ss.str() , 350 , 25 ) ;
+    //ofDrawBitmapStringHighlight( ss.str() , 350 , 25 ) ;
     //particles.size()
+    
     
 
 }
 
 void testApp::customFlowDraw( )
 {
+    
     ofPushMatrix() ;
         //ofScale( 4.0f , 4.0f , 1.0f ) ;
     
@@ -195,7 +218,7 @@ void testApp::customFlowDraw( )
         ofVec2f offset = ofVec2f( 0 ,0 ) ; // 0.75f   * kinect.getWidth() , 0.75 * kinect.getHeight() ) ;
     
         ofFill( ) ;
-    
+
         //cout << "scale : " << scale << endl ;
         int stepSize = 4 ;
         for(int y = 0; y < w ; y += stepSize) {
@@ -248,12 +271,19 @@ void testApp::setupGui()
     gui->addSlider( "MIN PARTICLE FORCE" , 0.01 , 15.0f , minParticleForce ) ;
     gui->addSlider( "PARTICLE FBO FADE" ,  0.0f , 255.0f , particleFboFade ) ;
     //gui->add2DPad("GRAVITY", ofPoint(-10,10), ofPoint(-10,10), particleGravity ) ;
+    gui->addSlider( "Z GRAVITY" , -5.0f , 5.0f , zGravity ) ; 
     //particleGravity
     gui->addRangeSlider( "PARTICLE LIFE", 10 , 450, particleLife.x , particleLife.y ) ;
 
     
     ofAddListener(gui->newGUIEvent,this,&testApp::guiEvent);
     gui->loadSettings( "GUI/settings.xml" ) ;
+}
+
+void testApp::hideAllGuis( )
+{
+    gui->disable() ;
+    landscape.gui->disable() ; 
 }
 
 void testApp::guiEvent(ofxUIEventArgs &e)
@@ -343,6 +373,16 @@ void testApp::guiEvent(ofxUIEventArgs &e)
     {
         particleFboFade = ((ofxUISlider *) e.widget)->getScaledValue() ;
     }
+    
+    if ( name == "Z GRAVITY" )
+    {
+        zGravity = ((ofxUISlider *) e.widget)->getScaledValue() ;
+    }
+
+    
+    /*
+     gui->addSlider( "Z GRAVITY" , -5.0f , 5.0f , zGravity ) ; 
+     */
 
     if(name == "PARTICLE LIFE" )
 	{
@@ -386,12 +426,23 @@ void testApp::guiEvent(ofxUIEventArgs &e)
 void testApp::keyPressed(int key){
     switch ( key )
     {
-        case 'g':
-        case 'G':
-            gui->toggleVisible() ; 
+        case '1':
+            hideAllGuis() ;
+            break ;
+            
+        case '2':
+            hideAllGuis() ; 
+            gui->enable() ;
+            break ;
+            
+        case '3':
+            hideAllGuis() ;
+            landscape.gui->enable() ;
             break ;
     }
 }
+
+
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){

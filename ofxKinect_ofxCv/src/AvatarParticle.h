@@ -17,8 +17,6 @@ class AvatarParticle
     public :
     AvatarParticle()
     {
-        x = 0 ;
-        y = 0 ;
         frameLife = -1 ;
         inertiaX = 0 ;
         inertiaY = 0 ; 
@@ -31,7 +29,7 @@ class AvatarParticle
         
     int frameLife ;
     float inertiaX , inertiaY ;
-    float x , y ; 
+    ofPoint p ; 
         
 };
 

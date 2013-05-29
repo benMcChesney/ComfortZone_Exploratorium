@@ -6,6 +6,7 @@
 #include "ofxKinect.h"
 #include "ofxUI.h"
 #include "AvatarParticle.h"
+#include "Landscape.h"
 
 class testApp : public ofBaseApp{
 
@@ -39,9 +40,10 @@ class testApp : public ofBaseApp{
         ofxCv::ContourFinder contourFinder;
     
         //ofxUI
-        ofxUICanvas *gui;
+        ofxUIScrollableCanvas *gui;
         void guiEvent(ofxUIEventArgs &e);
         void setupGui() ;
+        void hideAllGuis( ) ; 
     
     
         //Optical Flow Stuff
@@ -68,6 +70,13 @@ class testApp : public ofBaseApp{
 
 
         ofImage particleSprite ;
+    
+        Landscape landscape ;
+    
+        float zGravity ; 
+        ofEasyCam cam ;
+        //AnimatedBackground
+        
 
 
 };

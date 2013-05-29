@@ -1,74 +1,74 @@
 <Widget>
     <Kind>4</Kind>
     <Name>FPS SLIDER</Name>
-    <Value>106.459754944</Value>
+    <Value>56.498954773</Value>
 </Widget>
 <Widget>
     <Kind>6</Kind>
     <Name>KINECT PIXEL RANGE</Name>
     <HighValue>255.000000000</HighValue>
-    <LowValue>178.239807129</LowValue>
+    <LowValue>187.346939087</LowValue>
 </Widget>
 <Widget>
     <Kind>6</Kind>
     <Name>CV BLOB SIZE</Name>
     <HighValue>230400.000000000</HighValue>
-    <LowValue>30908.082031250</LowValue>
+    <LowValue>39026.937500000</LowValue>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>KINECT MOTOR ANGLE</Name>
-    <Value>-10.102041245</Value>
+    <Value>-5.828571320</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>FLOW SCALING</Name>
-    <Value>0.550000131</Value>
+    <Value>0.251530617</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>WINDOW SIZE</Name>
-    <Value>43.107143402</Value>
+    <Value>8.714285851</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>NUM LEVELS</Name>
-    <Value>7.964285374</Value>
+    <Value>7.887754917</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>PYRAMID SCALE</Name>
-    <Value>0.122857146</Value>
+    <Value>0.509795964</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POLY N</Name>
-    <Value>3.673469543</Value>
+    <Value>2.653061152</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POLY SIGMA</Name>
-    <Value>3.424948692</Value>
+    <Value>3.221071243</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>NUM ITERATIONS</Name>
-    <Value>1.367347002</Value>
+    <Value>1.265306115</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
     <Name>USE GAUSSIAN</Name>
-    <Value>0</Value>
+    <Value>1</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>NUM PARTICLES</Name>
-    <Value>4234.847167969</Value>
+    <Value>536.607177734</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>MIN PARTICLE FORCE</Name>
-    <Value>3.910459042</Value>
+    <Value>1.692551017</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
@@ -76,8 +76,13 @@
     <Value>14.311223984</Value>
 </Widget>
 <Widget>
+    <Kind>4</Kind>
+    <Name>Z GRAVITY</Name>
+    <Value>5.000000000</Value>
+</Widget>
+<Widget>
     <Kind>6</Kind>
     <Name>PARTICLE LIFE</Name>
-    <HighValue>25.714286804</HighValue>
+    <HighValue>54.897960663</HighValue>
     <LowValue>10.000000000</LowValue>
 </Widget>
