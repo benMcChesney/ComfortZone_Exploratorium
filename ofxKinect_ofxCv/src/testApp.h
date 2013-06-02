@@ -7,6 +7,7 @@
 #include "ofxUI.h"
 #include "AvatarParticle.h"
 #include "Landscape.h"
+#include "ofxPostProcessing.h"
 
 class testApp : public ofBaseApp{
 
@@ -76,7 +77,9 @@ class testApp : public ofBaseApp{
         float zGravity ; 
         ofEasyCam cam ;
         //AnimatedBackground
-        
+        ofxPostProcessing post;
+    
+        ofVec3f renderOffset ; 
 
 
 };

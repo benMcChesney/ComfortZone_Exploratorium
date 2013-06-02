@@ -1,7 +1,7 @@
 <Widget>
     <Kind>4</Kind>
     <Name>FPS SLIDER</Name>
-    <Value>52.621459961</Value>
+    <Value>56.960292816</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
@@ -16,40 +16,40 @@
 <Widget>
     <Kind>4</Kind>
     <Name>OFFSET Z</Name>
-    <Value>20.408203125</Value>
+    <Value>285.714355469</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>SEGMENTS</Name>
-    <Value>71.857147217</Value>
+    <Value>93.479583740</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>COPIES</Name>
-    <Value>63.000000000</Value>
+    <Value>37.500000000</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Z SPACING</Name>
-    <Value>-16.326538086</Value>
+    <Value>-12.244873047</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>COLOR OFFSET</Name>
-    <Value>180.841842651</Value>
+    <Value>218.571426392</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>HEIGHT NOISE OFFSET</Name>
-    <Value>408.163269043</Value>
+    <Value>267.857147217</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>LANDSCAPE HEIGHT</Name>
-    <Value>500.000000000</Value>
+    <Value>250.000000000</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>LANDSCAPE TIME FACTOR</Name>
-    <Value>0.489795923</Value>
+    <Value>1.094387770</Value>
 </Widget>

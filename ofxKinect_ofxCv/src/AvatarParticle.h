@@ -10,9 +10,9 @@
 #define __ofxKinect_ofxCv__AvatarParticle__
 
 #include "ofMain.h"
-#include "ofxParticle2D.h"
+#include "ofxParticle3D.h"
 
-class AvatarParticle 
+class AvatarParticle : public ofxParticle3D
 {
     public :
     AvatarParticle()
@@ -29,7 +29,7 @@ class AvatarParticle
         
     int frameLife ;
     float inertiaX , inertiaY ;
-    ofPoint p ; 
+    //ofPoint p ;
         
 };
 

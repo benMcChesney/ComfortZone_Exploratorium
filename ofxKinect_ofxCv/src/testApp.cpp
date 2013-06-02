@@ -47,7 +47,16 @@ void testApp::setup(){
     
     contourFinder.setFindHoles(true) ;
     
-    cam.enableMouseInput(); 
+    cam.enableMouseInput();
+    
+    post.init(ofGetWidth(), ofGetHeight());
+    post.createPass<FxaaPass>()->setEnabled(false);
+    post.createPass<BloomPass>()->setEnabled(true);
+    post.createPass<DofPass>()->setEnabled(false);
+    post.createPass<KaleidoscopePass>()->setEnabled(false);
+    post.createPass<NoiseWarpPass>()->setEnabled(false);
+    post.createPass<PixelatePass>()->setEnabled(false);
+    post.createPass<EdgePass>()->setEnabled(false);
 }
 
 //--------------------------------------------------------------
@@ -98,7 +107,7 @@ void testApp::update(){
         while ( p != particles.end() )
         {
             (*p)->update() ;
-            (*p)->p.z += zGravity ; 
+            (*p)->z += zGravity ;
             if ( (*p)->frameLife < 0 )
             {
                 delete ( *p ) ;
@@ -124,34 +133,37 @@ void testApp::draw(){
     ofBackground( 0 , 0 ,0 ) ; 
     ofSetColor( 255 ) ;
     
-    cam.begin() ;
+    // copy enable part of gl state
+    glPushAttrib(GL_ENABLE_BIT);
+    
+    // setup gl state
+    glEnable(GL_DEPTH_TEST);
+    //glEnable(GL_CULL_FACE);
+    
+    //kinect.draw( 300 , 15 ) ;
+    post.begin( cam ) ; 
+    //cam.begin() ;
         ofTranslate( -ofGetWidth()/2 , ofGetHeight()/-2 ) ;
     
     ofPushMatrix() ;
+    landscape.draw( ) ;
+       
+    ofVec2f offset = ofVec2f( (ofGetWidth()- kinect.getWidth() )/2  , ( ofGetHeight() - kinect.getHeight()  ) /2  ) ;
+    ofTranslate( offset ) ;
     
-    particleFbo.begin() ;
-    ofSetColor( 0 , 0 , 0, particleFboFade ) ;
-    ofRect( 0 , 0 , ofGetWidth() , ofGetHeight() ) ;
-    
-        ofVec2f offset = ofVec2f( (ofGetWidth()- kinect.getWidth() )/2  , ( ofGetHeight() - kinect.getHeight()  ) /2  ) ;
-        ofTranslate( offset ) ;
-    
-        //ofTranslate( 275 , 10 ) ;
-        //ofScale( 0.75 , 0.75 ) ;
-        //grayImage.draw( 0 , 0 ) ;
-        //kinect.draw( 0 , kinect.getHeight() ) ;
-        vector<vector<cv::Point> > contours = contourFinder.getContours() ;
+    vector<vector<cv::Point> > contours = contourFinder.getContours() ;
         
-    
-        
-        
+    ofTranslate(0 , particleFbo.getHeight() ) ;
+    ofScale( 1 , -1 ) ;
+    ofTranslate(renderOffset) ; 
 
+    ofPushMatrix() ;
+        
         for ( int c = 0 ; c < contours.size() ; c++ )
         {
-  //          ofPolyline polyline ;
             ofPath path ;
             
-            for ( int i = 0 ; i < contours[c].size() ;i++ )
+            for ( int i = 0 ; i < contours[c].size() ;i+=6 )
             {
                
                 cv::Point p = contours[c][i] ;
@@ -169,30 +181,24 @@ void testApp::draw(){
             path.setStrokeColor(ofColor::white ) ;
             path.setStrokeWidth( 4.0f ) ;
             path.setFilled( true ) ;
-            path.draw( ) ;
-            /*
-            for ( int s = 0 ; s < 5 ; s++ )
-            {
-                path.scale( 1.1 , 1.1 ) ;
-                ofPolyline polyline = path.getOutline()[0] ;
-                ofRectangle bounds = polyline.getBoundingBox() ;
-                cout << "bounds :" << bounds.x << " , " << bounds.y << " , " << bounds.width << " , " << bounds.height << endl;
-                
-                bounds.width += -bounds.x ;
-                bounds.height += -bounds.y ;
-                ofTranslate( bounds.getWidth() / -2 , polyline.getBoundingBox().getHeight() / -2) ;
             
-                path.setFilled( false ) ;
-                path.draw( ) ;
-            }*/
-         //   polyline.setClosed(true) ;
-          
+            vector<ofPolyline> poly = path.getOutline() ;
+            
+            poly[0].simplify() ;
+
+            //path.draw( ) ;
+            poly[0].draw( ) ; 
             ofFill() ; 
             //polyline.draw() ;
             ofSetLineWidth( 1 ) ;
         }
+    ofPopMatrix() ;
         //contourFinder.draw() ;
         customFlowDraw( ) ;
+    
+        //particleFbo.begin() ;
+        ofSetColor( 0 , 0 , 0, particleFboFade ) ;
+       // ofRect( 0 , 0 , ofGetWidth() , ofGetHeight() ) ;
     
         ofTranslate( offset * -1 ) ;
        
@@ -205,23 +211,26 @@ void testApp::draw(){
         while ( p != particles.end() )
         {
             //(*p)->draw( ) ;
-            particleSprite.draw( (*p)->p ) ;
+            ofPushMatrix() ;
+                ofTranslate( (*p)->x , (*p)->y , (*p)->z ) ;
+                particleSprite.draw( 0 , 0 ) ;
+            ofPopMatrix() ;
             p++ ;
         }
         ofEnableAlphaBlending() ;
-        particleFbo.end() ;
+       // particleFbo.end() ;
     
         ofSetColor( 255 ) ;
         ofPushMatrix() ;
-            ofTranslate(0 , particleFbo.getHeight() ) ;
-            ofScale( 1 , -1 ) ;
-            particleFbo.draw( 0 , 0 ) ;
+         //   ofTranslate(0 , particleFbo.getHeight() ) ;
+        //    ofScale( 1 , -1 ) ;
+        //    particleFbo.draw( 0 , 0 ) ;
         ofPopMatrix() ;
 
     ofPopMatrix() ;
 
-    landscape.draw( ) ; 
-    cam.end() ; 
+    
+    post.end() ; 
     
     ofPopMatrix() ;
     
@@ -232,7 +241,12 @@ void testApp::draw(){
     //particles.size()
     
     
-
+    // copy enable part of gl state
+    glPopAttrib() ; //
+    
+    // setup gl state
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_CULL_FACE);
 }
 
 void testApp::customFlowDraw( )
@@ -288,6 +302,11 @@ void testApp::setupGui()
     gui->addRangeSlider( "CV BLOB SIZE" , totalPixels * .01 , totalPixels * .75f , minBlobSize , maxBlobSize ) ; 
     
     gui->addSlider( "KINECT MOTOR ANGLE" , -30 , 30 ,  angle ) ;
+    
+    //renderOffset
+    gui->addSlider( "RENDER OFFSET X" , -1000.0 , 1000.0f , renderOffset.x ) ;
+    gui->addSlider( "RENDER OFFSET Y" , -1000.0 , 1000.0f , renderOffset.y ) ;
+    gui->addSlider( "RENDER OFFSET Z" , -1000.0 , 1000.0f , renderOffset.z ) ;
     gui->addSpacer() ;
     gui->addSlider( "FLOW SCALING", 0.1f, 1.0f  ,  flowScaling ) ;
     gui->addLabel("OPTICAL FLOW PARAMS" ) ;
@@ -303,7 +322,7 @@ void testApp::setupGui()
     gui->addSlider( "MIN PARTICLE FORCE" , 0.01 , 15.0f , minParticleForce ) ;
     gui->addSlider( "PARTICLE FBO FADE" ,  0.0f , 255.0f , particleFboFade ) ;
     //gui->add2DPad("GRAVITY", ofPoint(-10,10), ofPoint(-10,10), particleGravity ) ;
-    gui->addSlider( "Z GRAVITY" , -5.0f , 5.0f , zGravity ) ; 
+    gui->addSlider( "Z GRAVITY" , -25.0f , 25.0f , zGravity ) ;
     //particleGravity
     gui->addRangeSlider( "PARTICLE LIFE", 10 , 450, particleLife.x , particleLife.y ) ;
 
@@ -410,8 +429,27 @@ void testApp::guiEvent(ofxUIEventArgs &e)
     {
         zGravity = ((ofxUISlider *) e.widget)->getScaledValue() ;
     }
-
     
+    if ( name == "RENDER OFFSET X" )
+    {
+        renderOffset.x = ((ofxUISlider *) e.widget)->getScaledValue() ;
+    }
+    
+    if ( name == "RENDER OFFSET Y" )
+    {
+        renderOffset.y = ((ofxUISlider *) e.widget)->getScaledValue() ;
+    }
+    
+    if ( name == "RENDER OFFSET Z" )
+    {
+        renderOffset.z = ((ofxUISlider *) e.widget)->getScaledValue() ;
+    }
+
+    /*
+     gui->addSlider( "RENDER OFFSET X" , renderOffset.x , -1000.0 , 1000.0f ) ;
+     gui->addSlider( "RENDER OFFSET Y" , renderOffset.y , -1000.0 , 1000.0f ) ;
+     gui->addSlider( "RENDER OFFSET Z" , renderOffset.z , -1000.0 , 1000.0f ) ;
+     */
     /*
      gui->addSlider( "Z GRAVITY" , -5.0f , 5.0f , zGravity ) ; 
      */
@@ -456,18 +494,25 @@ void testApp::guiEvent(ofxUIEventArgs &e)
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    unsigned idx = key - '0';
+    if (idx < post.size()) post[idx]->setEnabled(!post[idx]->getEnabled());
+    
     switch ( key )
     {
-        case '1':
+        case 'q':
+        case 'Q':
             hideAllGuis() ;
             break ;
             
-        case '2':
+        case 'w':
+        case 'W':
             hideAllGuis() ; 
             gui->enable() ;
             break ;
             
-        case '3':
+        case 'e':
+        case 'E':
             hideAllGuis() ;
             landscape.gui->enable() ;
             break ;

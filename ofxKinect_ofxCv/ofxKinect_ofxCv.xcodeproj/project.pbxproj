@@ -27,6 +27,17 @@
 		933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */; };
 		9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		D900BF941757269C0075A5CE /* BloomPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF761757269C0075A5CE /* BloomPass.cpp */; };
+		D900BF951757269C0075A5CE /* ConvolutionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF781757269C0075A5CE /* ConvolutionPass.cpp */; };
+		D900BF961757269C0075A5CE /* DofAltPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF7A1757269C0075A5CE /* DofAltPass.cpp */; };
+		D900BF971757269C0075A5CE /* DofPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF7C1757269C0075A5CE /* DofPass.cpp */; };
+		D900BF981757269C0075A5CE /* EdgePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF7E1757269C0075A5CE /* EdgePass.cpp */; };
+		D900BF991757269C0075A5CE /* FxaaPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF801757269C0075A5CE /* FxaaPass.cpp */; };
+		D900BF9A1757269C0075A5CE /* KaleidoscopePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF821757269C0075A5CE /* KaleidoscopePass.cpp */; };
+		D900BF9B1757269C0075A5CE /* NoiseWarpPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF841757269C0075A5CE /* NoiseWarpPass.cpp */; };
+		D900BF9C1757269C0075A5CE /* PixelatePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF871757269C0075A5CE /* PixelatePass.cpp */; };
+		D900BF9D1757269C0075A5CE /* PostProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF891757269C0075A5CE /* PostProcessing.cpp */; };
+		D900BF9E1757269C0075A5CE /* RenderPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D900BF8B1757269C0075A5CE /* RenderPass.cpp */; };
 		D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */; };
 		D9ACF1A2174C6F460072BE24 /* ofxParticle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */; };
 		D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACF1A0174C6F460072BE24 /* ofxParticle3D.cpp */; };
@@ -213,6 +224,31 @@
 		9dbd717072c35d324e1016697d7aa720 /* Distance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Distance.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp; sourceTree = SOURCE_ROOT; };
 		9ff9126184dfbde8a912373ebe9d2f9d /* highgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = highgui.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		D900BF681757269C0075A5CE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D900BF741757269C0075A5CE /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		D900BF761757269C0075A5CE /* BloomPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomPass.cpp; sourceTree = "<group>"; };
+		D900BF771757269C0075A5CE /* BloomPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomPass.h; sourceTree = "<group>"; };
+		D900BF781757269C0075A5CE /* ConvolutionPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvolutionPass.cpp; sourceTree = "<group>"; };
+		D900BF791757269C0075A5CE /* ConvolutionPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvolutionPass.h; sourceTree = "<group>"; };
+		D900BF7A1757269C0075A5CE /* DofAltPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DofAltPass.cpp; sourceTree = "<group>"; };
+		D900BF7B1757269C0075A5CE /* DofAltPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DofAltPass.h; sourceTree = "<group>"; };
+		D900BF7C1757269C0075A5CE /* DofPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DofPass.cpp; sourceTree = "<group>"; };
+		D900BF7D1757269C0075A5CE /* DofPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DofPass.h; sourceTree = "<group>"; };
+		D900BF7E1757269C0075A5CE /* EdgePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgePass.cpp; sourceTree = "<group>"; };
+		D900BF7F1757269C0075A5CE /* EdgePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePass.h; sourceTree = "<group>"; };
+		D900BF801757269C0075A5CE /* FxaaPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FxaaPass.cpp; sourceTree = "<group>"; };
+		D900BF811757269C0075A5CE /* FxaaPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxaaPass.h; sourceTree = "<group>"; };
+		D900BF821757269C0075A5CE /* KaleidoscopePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KaleidoscopePass.cpp; sourceTree = "<group>"; };
+		D900BF831757269C0075A5CE /* KaleidoscopePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaleidoscopePass.h; sourceTree = "<group>"; };
+		D900BF841757269C0075A5CE /* NoiseWarpPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseWarpPass.cpp; sourceTree = "<group>"; };
+		D900BF851757269C0075A5CE /* NoiseWarpPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseWarpPass.h; sourceTree = "<group>"; };
+		D900BF861757269C0075A5CE /* ofxPostProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPostProcessing.h; sourceTree = "<group>"; };
+		D900BF871757269C0075A5CE /* PixelatePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixelatePass.cpp; sourceTree = "<group>"; };
+		D900BF881757269C0075A5CE /* PixelatePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelatePass.h; sourceTree = "<group>"; };
+		D900BF891757269C0075A5CE /* PostProcessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostProcessing.cpp; sourceTree = "<group>"; };
+		D900BF8A1757269C0075A5CE /* PostProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostProcessing.h; sourceTree = "<group>"; };
+		D900BF8B1757269C0075A5CE /* RenderPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderPass.cpp; sourceTree = "<group>"; };
+		D900BF8C1757269C0075A5CE /* RenderPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderPass.h; sourceTree = "<group>"; };
 		D92C2D17174F34FB0065EE47 /* AvatarParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AvatarParticle.cpp; sourceTree = "<group>"; };
 		D92C2D18174F34FB0065EE47 /* AvatarParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarParticle.h; sourceTree = "<group>"; };
 		D9ACF19E174C6F460072BE24 /* ofxParticle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle2D.cpp; sourceTree = "<group>"; };
@@ -711,6 +747,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				D900BF671757269C0075A5CE /* ofxPostProcessing */,
 				D9ACF19C174C6F460072BE24 /* ofxParticles */,
 				a0b90d3b0adb9c1716816714bf7f212b /* ofxOpenCv */,
 				1f4fb5c423662b96adfdcc0badec1cb0 /* ofxXmlSettings */,
@@ -750,6 +787,47 @@
 				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
 			);
 			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		D900BF671757269C0075A5CE /* ofxPostProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				D900BF681757269C0075A5CE /* .gitignore */,
+				D900BF741757269C0075A5CE /* readme.md */,
+				D900BF751757269C0075A5CE /* src */,
+			);
+			name = ofxPostProcessing;
+			path = ../../../addons/ofxPostProcessing;
+			sourceTree = "<group>";
+		};
+		D900BF751757269C0075A5CE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D900BF761757269C0075A5CE /* BloomPass.cpp */,
+				D900BF771757269C0075A5CE /* BloomPass.h */,
+				D900BF781757269C0075A5CE /* ConvolutionPass.cpp */,
+				D900BF791757269C0075A5CE /* ConvolutionPass.h */,
+				D900BF7A1757269C0075A5CE /* DofAltPass.cpp */,
+				D900BF7B1757269C0075A5CE /* DofAltPass.h */,
+				D900BF7C1757269C0075A5CE /* DofPass.cpp */,
+				D900BF7D1757269C0075A5CE /* DofPass.h */,
+				D900BF7E1757269C0075A5CE /* EdgePass.cpp */,
+				D900BF7F1757269C0075A5CE /* EdgePass.h */,
+				D900BF801757269C0075A5CE /* FxaaPass.cpp */,
+				D900BF811757269C0075A5CE /* FxaaPass.h */,
+				D900BF821757269C0075A5CE /* KaleidoscopePass.cpp */,
+				D900BF831757269C0075A5CE /* KaleidoscopePass.h */,
+				D900BF841757269C0075A5CE /* NoiseWarpPass.cpp */,
+				D900BF851757269C0075A5CE /* NoiseWarpPass.h */,
+				D900BF861757269C0075A5CE /* ofxPostProcessing.h */,
+				D900BF871757269C0075A5CE /* PixelatePass.cpp */,
+				D900BF881757269C0075A5CE /* PixelatePass.h */,
+				D900BF891757269C0075A5CE /* PostProcessing.cpp */,
+				D900BF8A1757269C0075A5CE /* PostProcessing.h */,
+				D900BF8B1757269C0075A5CE /* RenderPass.cpp */,
+				D900BF8C1757269C0075A5CE /* RenderPass.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		D9ACF19C174C6F460072BE24 /* ofxParticles */ = {
@@ -1161,6 +1239,17 @@
 				D9ACF1A3174C6F460072BE24 /* ofxParticle3D.cpp in Sources */,
 				D92C2D19174F34FB0065EE47 /* AvatarParticle.cpp in Sources */,
 				D9BE88DC17530E0B0075416A /* Landscape.cpp in Sources */,
+				D900BF941757269C0075A5CE /* BloomPass.cpp in Sources */,
+				D900BF951757269C0075A5CE /* ConvolutionPass.cpp in Sources */,
+				D900BF961757269C0075A5CE /* DofAltPass.cpp in Sources */,
+				D900BF971757269C0075A5CE /* DofPass.cpp in Sources */,
+				D900BF981757269C0075A5CE /* EdgePass.cpp in Sources */,
+				D900BF991757269C0075A5CE /* FxaaPass.cpp in Sources */,
+				D900BF9A1757269C0075A5CE /* KaleidoscopePass.cpp in Sources */,
+				D900BF9B1757269C0075A5CE /* NoiseWarpPass.cpp in Sources */,
+				D900BF9C1757269C0075A5CE /* PixelatePass.cpp in Sources */,
+				D900BF9D1757269C0075A5CE /* PostProcessing.cpp in Sources */,
+				D900BF9E1757269C0075A5CE /* RenderPass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

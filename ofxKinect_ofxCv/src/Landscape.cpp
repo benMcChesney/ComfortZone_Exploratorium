@@ -45,7 +45,31 @@ void Landscape::draw( )
         {
             float lastZOffset = 0.0f  ;
             float lastHeightFactor = 0.0f ;
-            float lastNormalZ = 0.0f ; 
+            float lastNormalZ = 0.0f ;
+            
+            float zOffset = zSpacing * c ;
+            float normalZ = (float) c / (float) copies ;
+            
+            ofColor _lerp = startColor ;
+            _lerp.lerp( endColor,  (float)c / copies ) ;
+            
+            _lerp.a = ( 1.0f - normalZ ) * 255.0f ;
+            ofSetColor( _lerp ) ;
+            ofTranslate( 0 , 0, zOffset ) ;
+
+            ofSetLineWidth( 4 ) ; 
+            ofLine( p1 , p2 ) ;
+            ofLine( p2 , p3 ) ;
+            ofLine( p3 , p4 ) ;
+            ofLine( p4 , p1 ) ;
+            
+            ofLine ( p1.x , p1.y , 0 , p1.x , p1.y , zSpacing * 2.0f ) ;
+            ofLine ( p2.x , p2.y , 0 , p2.x , p2.y , zSpacing * 2.0f ) ;
+            ofLine ( p3.x , p3.y , 0 , p3.x , p3.y , zSpacing * 2.0f ) ;
+            ofLine ( p4.x , p4.y , 0 , p4.x , p4.y , zSpacing * 2.0f ) ;
+            
+            lastZOffset = zOffset ;
+            /*
             for ( int r = 0 ; r < segments ; r++ )
             {
                 ofColor _lerp = startColor ;
@@ -98,7 +122,7 @@ void Landscape::draw( )
                 prevPoint = point ;
                 lastHeightFactor = heightFactor ;
                 lastZOffset = zOffset ; 
-            }
+            }*/
         }
         
     

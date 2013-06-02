@@ -10,7 +10,9 @@
 
 void AvatarParticle::setup ( float _x , float _y , int _frameLife , float _inertiaX , float _inertiaY )
 {
-    p = ofPoint ( _x , _y ) ;
+    //p = ofPoint ( _x , _y ) ;
+    x = _x ;
+    y = _y ; 
     frameLife = _frameLife ;
     inertiaX = _inertiaX ;
     inertiaY = _inertiaY ;
@@ -19,13 +21,12 @@ void AvatarParticle::setup ( float _x , float _y , int _frameLife , float _inert
 void AvatarParticle::update ( )
 {
     frameLife-- ;
-    p.x += inertiaX ;
-    p.y += inertiaY ;
-    
+    x += inertiaX ;
+    y += inertiaY ;
     
 }
 
 void AvatarParticle::draw( )
 {
-    ofCircle( p , 4 ) ;
+    //ofCircle( p , 4 ) ;
 }
