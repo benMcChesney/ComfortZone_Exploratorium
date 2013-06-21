@@ -1,0 +1,47 @@
+<Widget>
+    <Kind>6</Kind>
+    <Name>KINECT PIXEL RANGE</Name>
+    <HighValue>253.698974609</HighValue>
+    <LowValue>176.938781738</LowValue>
+</Widget>
+<Widget>
+    <Kind>6</Kind>
+    <Name>CV BLOB SIZE</Name>
+    <HighValue>230400.000000000</HighValue>
+    <LowValue>30908.082031250</LowValue>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>KINECT MOTOR ANGLE</Name>
+    <Value>-18.673469543</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SMOOTHING</Name>
+    <Value>2.346428394</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>ENABLE DEBUG MODE</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>NUM OF KEYPOINTS</Name>
+    <Value>4.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>RANDOMIZE KEYPOINTS</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>KEY POINTS EDGE PADDING</Name>
+    <Value>22.551021576</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>POSE HOLD TIME MILLIS</Name>
+    <Value>2576.530517578</Value>
+</Widget>
