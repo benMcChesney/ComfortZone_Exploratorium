@@ -1,6 +1,0 @@
-ofxOpenCv
-ofxXmlSettings
-ofxCv
-ofxKinect
-ofxTweenzor
-ofxUI
