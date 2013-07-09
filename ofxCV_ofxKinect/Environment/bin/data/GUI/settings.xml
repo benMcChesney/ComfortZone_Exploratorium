@@ -1,0 +1,110 @@
+<Widget>
+    <Kind>4</Kind>
+    <Name>GRAVITY Y</Name>
+    <Value>-0.924657464</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>GRAVITY VARIANCE Y</Name>
+    <Value>0.410959005</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>GRAVITY VARIANCE X</Name>
+    <Value>0.441780806</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SPAWN Y</Name>
+    <Value>874.257568359</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SPAWN Y VARIANCE</Name>
+    <Value>91.780822754</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SPAWN Z VARIANCE</Name>
+    <Value>482.876739502</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>NUM PER SPAWN WAVE</Name>
+    <Value>8.116438866</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MAX PARTICLES</Name>
+    <Value>9423.629882812</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>DAMPING</Name>
+    <Value>0.404109597</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SPAWN DELAY MILLIS</Name>
+    <Value>359.589050293</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>ROTATION LIFE MULTIPLIER</Name>
+    <Value>0.471917778</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>TRAILS FADE AMOUNT</Name>
+    <Value>83.835617065</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>LIGHT X</Name>
+    <Value>-27.397216797</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>LIGHT Y</Name>
+    <Value>-178.082275391</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>LIGHT Z</Name>
+    <Value>205.479492188</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>BLOOM</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>DOF</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>FLOCK TO TEST</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER X</Name>
+    <Value>133.561645508</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER Y</Name>
+    <Value>97.602737427</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER Z</Name>
+    <Value>166.095901489</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>TIME FACTOR</Name>
+    <Value>0.376712322</Value>
+</Widget>

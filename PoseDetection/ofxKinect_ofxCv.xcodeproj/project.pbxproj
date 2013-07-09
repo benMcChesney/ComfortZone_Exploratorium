@@ -30,6 +30,8 @@
 		D916205317740D6900D9DBAE /* UserPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D916205117740D6900D9DBAE /* UserPose.cpp */; };
 		D916207217740DB500D9DBAE /* PixelHitTestHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D916206817740DB500D9DBAE /* PixelHitTestHub.cpp */; };
 		D916208E17741AB900D9DBAE /* ofxSimpleTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D916208517741AB800D9DBAE /* ofxSimpleTimer.cpp */; };
+		D923206F1787AC22003FCEBA /* KeyPointPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D923206B1787AC22003FCEBA /* KeyPointPose.cpp */; };
+		D92320701787AC22003FCEBA /* PoseGestureMovie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D923206D1787AC22003FCEBA /* PoseGestureMovie.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -225,6 +227,10 @@
 		D916208317741AB800D9DBAE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D916208517741AB800D9DBAE /* ofxSimpleTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleTimer.cpp; sourceTree = "<group>"; };
 		D916208617741AB800D9DBAE /* ofxSimpleTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleTimer.h; sourceTree = "<group>"; };
+		D923206B1787AC22003FCEBA /* KeyPointPose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyPointPose.cpp; sourceTree = "<group>"; };
+		D923206C1787AC22003FCEBA /* KeyPointPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPointPose.h; sourceTree = "<group>"; };
+		D923206D1787AC22003FCEBA /* PoseGestureMovie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoseGestureMovie.cpp; sourceTree = "<group>"; };
+		D923206E1787AC22003FCEBA /* PoseGestureMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseGestureMovie.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -800,6 +806,18 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		D923206A1787AC22003FCEBA /* PoseGesture_Movie_lib */ = {
+			isa = PBXGroup;
+			children = (
+				D923206B1787AC22003FCEBA /* KeyPointPose.cpp */,
+				D923206C1787AC22003FCEBA /* KeyPointPose.h */,
+				D923206D1787AC22003FCEBA /* PoseGestureMovie.cpp */,
+				D923206E1787AC22003FCEBA /* PoseGestureMovie.h */,
+			);
+			name = PoseGesture_Movie_lib;
+			path = ../../PoseGesture_Movie_lib;
+			sourceTree = "<group>";
+		};
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -833,6 +851,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				D923206A1787AC22003FCEBA /* PoseGesture_Movie_lib */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
@@ -1186,6 +1205,8 @@
 				D916205317740D6900D9DBAE /* UserPose.cpp in Sources */,
 				D916207217740DB500D9DBAE /* PixelHitTestHub.cpp in Sources */,
 				D916208E17741AB900D9DBAE /* ofxSimpleTimer.cpp in Sources */,
+				D923206F1787AC22003FCEBA /* KeyPointPose.cpp in Sources */,
+				D92320701787AC22003FCEBA /* PoseGestureMovie.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

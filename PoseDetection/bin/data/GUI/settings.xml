@@ -2,7 +2,7 @@
     <Kind>6</Kind>
     <Name>KINECT PIXEL RANGE</Name>
     <HighValue>253.698974609</HighValue>
-    <LowValue>176.938781738</LowValue>
+    <LowValue>111.887756348</LowValue>
 </Widget>
 <Widget>
     <Kind>6</Kind>
@@ -13,12 +13,12 @@
 <Widget>
     <Kind>4</Kind>
     <Name>KINECT MOTOR ANGLE</Name>
-    <Value>-18.673469543</Value>
+    <Value>0.918367386</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>SMOOTHING</Name>
-    <Value>2.346428394</Value>
+    <Value>9.996428490</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>

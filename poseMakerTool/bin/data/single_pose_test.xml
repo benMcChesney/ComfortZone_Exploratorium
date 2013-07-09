@@ -1,0 +1,21 @@
+<moviePath>single_pose_test.mov</moviePath>
+<pose>
+    <in>0.170898438</in>
+    <out>0.570289969</out>
+    <keyPoint>
+        <x>228.000000000</x>
+        <y>472.000000000</y>
+    </keyPoint>
+    <keyPoint>
+        <x>317.000000000</x>
+        <y>323.000000000</y>
+    </keyPoint>
+    <keyPoint>
+        <x>397.000000000</x>
+        <y>429.000000000</y>
+    </keyPoint>
+    <keyPoint>
+        <x>308.000000000</x>
+        <y>227.000000000</y>
+    </keyPoint>
+</pose>

@@ -1,0 +1,7 @@
+ofxAssimpModelLoader
+ofxXmlSettings
+ofxParticles
+ofxPostProcessing
+ofxSimpleTimer
+ofxTweenzor
+ofxUI
