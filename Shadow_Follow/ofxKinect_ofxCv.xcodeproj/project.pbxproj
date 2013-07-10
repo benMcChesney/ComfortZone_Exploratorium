@@ -27,6 +27,21 @@
 		933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */; };
 		9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		D9A42D00178D2C9E00F323D1 /* ofxSimpleTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9A42CF7178D2C9E00F323D1 /* ofxSimpleTimer.cpp */; };
+		D9D4B878178D19C800C4274A /* UserAvatar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B876178D19C800C4274A /* UserAvatar.cpp */; };
+		D9D4B884178D1B0200C4274A /* ofxParticle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B880178D1B0200C4274A /* ofxParticle2D.cpp */; };
+		D9D4B885178D1B0200C4274A /* ofxParticle3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B882178D1B0200C4274A /* ofxParticle3D.cpp */; };
+		D9D4B8B3178D1B8300C4274A /* BloomPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B895178D1B8300C4274A /* BloomPass.cpp */; };
+		D9D4B8B4178D1B8300C4274A /* ConvolutionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B897178D1B8300C4274A /* ConvolutionPass.cpp */; };
+		D9D4B8B5178D1B8300C4274A /* DofAltPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B899178D1B8300C4274A /* DofAltPass.cpp */; };
+		D9D4B8B6178D1B8300C4274A /* DofPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B89B178D1B8300C4274A /* DofPass.cpp */; };
+		D9D4B8B7178D1B8300C4274A /* EdgePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B89D178D1B8300C4274A /* EdgePass.cpp */; };
+		D9D4B8B8178D1B8300C4274A /* FxaaPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B89F178D1B8300C4274A /* FxaaPass.cpp */; };
+		D9D4B8B9178D1B8300C4274A /* KaleidoscopePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B8A1178D1B8300C4274A /* KaleidoscopePass.cpp */; };
+		D9D4B8BA178D1B8300C4274A /* NoiseWarpPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B8A3178D1B8300C4274A /* NoiseWarpPass.cpp */; };
+		D9D4B8BB178D1B8300C4274A /* PixelatePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B8A6178D1B8300C4274A /* PixelatePass.cpp */; };
+		D9D4B8BC178D1B8300C4274A /* PostProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B8A8178D1B8300C4274A /* PostProcessing.cpp */; };
+		D9D4B8BD178D1B8300C4274A /* RenderPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B8AA178D1B8300C4274A /* RenderPass.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -209,6 +224,41 @@
 		9dbd717072c35d324e1016697d7aa720 /* Distance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Distance.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp; sourceTree = SOURCE_ROOT; };
 		9ff9126184dfbde8a912373ebe9d2f9d /* highgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = highgui.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		D9A42CE9178D2C9E00F323D1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D9A42CF5178D2C9E00F323D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D9A42CF7178D2C9E00F323D1 /* ofxSimpleTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleTimer.cpp; sourceTree = "<group>"; };
+		D9A42CF8178D2C9E00F323D1 /* ofxSimpleTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleTimer.h; sourceTree = "<group>"; };
+		D9D4B876178D19C800C4274A /* UserAvatar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserAvatar.cpp; sourceTree = "<group>"; };
+		D9D4B877178D19C800C4274A /* UserAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAvatar.h; sourceTree = "<group>"; };
+		D9D4B880178D1B0200C4274A /* ofxParticle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle2D.cpp; sourceTree = "<group>"; };
+		D9D4B881178D1B0200C4274A /* ofxParticle2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle2D.h; sourceTree = "<group>"; };
+		D9D4B882178D1B0200C4274A /* ofxParticle3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle3D.cpp; sourceTree = "<group>"; };
+		D9D4B883178D1B0200C4274A /* ofxParticle3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle3D.h; sourceTree = "<group>"; };
+		D9D4B887178D1B8300C4274A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D9D4B893178D1B8300C4274A /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		D9D4B895178D1B8300C4274A /* BloomPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomPass.cpp; sourceTree = "<group>"; };
+		D9D4B896178D1B8300C4274A /* BloomPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomPass.h; sourceTree = "<group>"; };
+		D9D4B897178D1B8300C4274A /* ConvolutionPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvolutionPass.cpp; sourceTree = "<group>"; };
+		D9D4B898178D1B8300C4274A /* ConvolutionPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvolutionPass.h; sourceTree = "<group>"; };
+		D9D4B899178D1B8300C4274A /* DofAltPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DofAltPass.cpp; sourceTree = "<group>"; };
+		D9D4B89A178D1B8300C4274A /* DofAltPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DofAltPass.h; sourceTree = "<group>"; };
+		D9D4B89B178D1B8300C4274A /* DofPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DofPass.cpp; sourceTree = "<group>"; };
+		D9D4B89C178D1B8300C4274A /* DofPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DofPass.h; sourceTree = "<group>"; };
+		D9D4B89D178D1B8300C4274A /* EdgePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgePass.cpp; sourceTree = "<group>"; };
+		D9D4B89E178D1B8300C4274A /* EdgePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePass.h; sourceTree = "<group>"; };
+		D9D4B89F178D1B8300C4274A /* FxaaPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FxaaPass.cpp; sourceTree = "<group>"; };
+		D9D4B8A0178D1B8300C4274A /* FxaaPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxaaPass.h; sourceTree = "<group>"; };
+		D9D4B8A1178D1B8300C4274A /* KaleidoscopePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KaleidoscopePass.cpp; sourceTree = "<group>"; };
+		D9D4B8A2178D1B8300C4274A /* KaleidoscopePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaleidoscopePass.h; sourceTree = "<group>"; };
+		D9D4B8A3178D1B8300C4274A /* NoiseWarpPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseWarpPass.cpp; sourceTree = "<group>"; };
+		D9D4B8A4178D1B8300C4274A /* NoiseWarpPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseWarpPass.h; sourceTree = "<group>"; };
+		D9D4B8A5178D1B8300C4274A /* ofxPostProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPostProcessing.h; sourceTree = "<group>"; };
+		D9D4B8A6178D1B8300C4274A /* PixelatePass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixelatePass.cpp; sourceTree = "<group>"; };
+		D9D4B8A7178D1B8300C4274A /* PixelatePass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelatePass.h; sourceTree = "<group>"; };
+		D9D4B8A8178D1B8300C4274A /* PostProcessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostProcessing.cpp; sourceTree = "<group>"; };
+		D9D4B8A9178D1B8300C4274A /* PostProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostProcessing.h; sourceTree = "<group>"; };
+		D9D4B8AA178D1B8300C4274A /* RenderPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderPass.cpp; sourceTree = "<group>"; };
+		D9D4B8AB178D1B8300C4274A /* RenderPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderPass.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -699,6 +749,9 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				D9A42CE8178D2C9E00F323D1 /* ofxSimpleTimer */,
+				D9D4B886178D1B8300C4274A /* ofxPostProcessing */,
+				D9D4B87E178D1B0200C4274A /* ofxParticles */,
 				a0b90d3b0adb9c1716816714bf7f212b /* ofxOpenCv */,
 				1f4fb5c423662b96adfdcc0badec1cb0 /* ofxXmlSettings */,
 				6025faf6414c2ca589764d26b59a2f04 /* ofxCv */,
@@ -739,6 +792,87 @@
 			name = "3rd party frameworks";
 			sourceTree = "<group>";
 		};
+		D9A42CE8178D2C9E00F323D1 /* ofxSimpleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D9A42CE9178D2C9E00F323D1 /* .gitignore */,
+				D9A42CF5178D2C9E00F323D1 /* README.md */,
+				D9A42CF6178D2C9E00F323D1 /* src */,
+			);
+			name = ofxSimpleTimer;
+			path = ../../../addons/ofxSimpleTimer;
+			sourceTree = "<group>";
+		};
+		D9A42CF6178D2C9E00F323D1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D9A42CF7178D2C9E00F323D1 /* ofxSimpleTimer.cpp */,
+				D9A42CF8178D2C9E00F323D1 /* ofxSimpleTimer.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D9D4B87E178D1B0200C4274A /* ofxParticles */ = {
+			isa = PBXGroup;
+			children = (
+				D9D4B87F178D1B0200C4274A /* src */,
+			);
+			name = ofxParticles;
+			path = ../../../addons/ofxParticles;
+			sourceTree = "<group>";
+		};
+		D9D4B87F178D1B0200C4274A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D9D4B880178D1B0200C4274A /* ofxParticle2D.cpp */,
+				D9D4B881178D1B0200C4274A /* ofxParticle2D.h */,
+				D9D4B882178D1B0200C4274A /* ofxParticle3D.cpp */,
+				D9D4B883178D1B0200C4274A /* ofxParticle3D.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D9D4B886178D1B8300C4274A /* ofxPostProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				D9D4B887178D1B8300C4274A /* .gitignore */,
+				D9D4B893178D1B8300C4274A /* readme.md */,
+				D9D4B894178D1B8300C4274A /* src */,
+			);
+			name = ofxPostProcessing;
+			path = ../../../addons/ofxPostProcessing;
+			sourceTree = "<group>";
+		};
+		D9D4B894178D1B8300C4274A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D9D4B895178D1B8300C4274A /* BloomPass.cpp */,
+				D9D4B896178D1B8300C4274A /* BloomPass.h */,
+				D9D4B897178D1B8300C4274A /* ConvolutionPass.cpp */,
+				D9D4B898178D1B8300C4274A /* ConvolutionPass.h */,
+				D9D4B899178D1B8300C4274A /* DofAltPass.cpp */,
+				D9D4B89A178D1B8300C4274A /* DofAltPass.h */,
+				D9D4B89B178D1B8300C4274A /* DofPass.cpp */,
+				D9D4B89C178D1B8300C4274A /* DofPass.h */,
+				D9D4B89D178D1B8300C4274A /* EdgePass.cpp */,
+				D9D4B89E178D1B8300C4274A /* EdgePass.h */,
+				D9D4B89F178D1B8300C4274A /* FxaaPass.cpp */,
+				D9D4B8A0178D1B8300C4274A /* FxaaPass.h */,
+				D9D4B8A1178D1B8300C4274A /* KaleidoscopePass.cpp */,
+				D9D4B8A2178D1B8300C4274A /* KaleidoscopePass.h */,
+				D9D4B8A3178D1B8300C4274A /* NoiseWarpPass.cpp */,
+				D9D4B8A4178D1B8300C4274A /* NoiseWarpPass.h */,
+				D9D4B8A5178D1B8300C4274A /* ofxPostProcessing.h */,
+				D9D4B8A6178D1B8300C4274A /* PixelatePass.cpp */,
+				D9D4B8A7178D1B8300C4274A /* PixelatePass.h */,
+				D9D4B8A8178D1B8300C4274A /* PostProcessing.cpp */,
+				D9D4B8A9178D1B8300C4274A /* PostProcessing.h */,
+				D9D4B8AA178D1B8300C4274A /* RenderPass.cpp */,
+				D9D4B8AB178D1B8300C4274A /* RenderPass.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +909,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				D9D4B876178D19C800C4274A /* UserAvatar.cpp */,
+				D9D4B877178D19C800C4274A /* UserAvatar.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1120,6 +1256,21 @@
 				3459f3becfe8cb6a6683889e1690f01a /* usb_libusb10.c in Sources */,
 				6205df95c4d4cd36cc5a274c35e3899c /* Tween.cpp in Sources */,
 				124bb58efbc1472d607d739b448f711e /* Tweenzor.cpp in Sources */,
+				D9D4B878178D19C800C4274A /* UserAvatar.cpp in Sources */,
+				D9D4B884178D1B0200C4274A /* ofxParticle2D.cpp in Sources */,
+				D9D4B885178D1B0200C4274A /* ofxParticle3D.cpp in Sources */,
+				D9D4B8B3178D1B8300C4274A /* BloomPass.cpp in Sources */,
+				D9D4B8B4178D1B8300C4274A /* ConvolutionPass.cpp in Sources */,
+				D9D4B8B5178D1B8300C4274A /* DofAltPass.cpp in Sources */,
+				D9D4B8B6178D1B8300C4274A /* DofPass.cpp in Sources */,
+				D9D4B8B7178D1B8300C4274A /* EdgePass.cpp in Sources */,
+				D9D4B8B8178D1B8300C4274A /* FxaaPass.cpp in Sources */,
+				D9D4B8B9178D1B8300C4274A /* KaleidoscopePass.cpp in Sources */,
+				D9D4B8BA178D1B8300C4274A /* NoiseWarpPass.cpp in Sources */,
+				D9D4B8BB178D1B8300C4274A /* PixelatePass.cpp in Sources */,
+				D9D4B8BC178D1B8300C4274A /* PostProcessing.cpp in Sources */,
+				D9D4B8BD178D1B8300C4274A /* RenderPass.cpp in Sources */,
+				D9A42D00178D2C9E00F323D1 /* ofxSimpleTimer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

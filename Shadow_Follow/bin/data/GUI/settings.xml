@@ -1,22 +1,102 @@
 <Widget>
     <Kind>6</Kind>
     <Name>KINECT PIXEL RANGE</Name>
-    <HighValue>253.698974609</HighValue>
-    <LowValue>170.433670044</LowValue>
+    <HighValue>252.397964478</HighValue>
+    <LowValue>117.091835022</LowValue>
 </Widget>
 <Widget>
     <Kind>6</Kind>
     <Name>CV BLOB SIZE</Name>
     <HighValue>230400.000000000</HighValue>
-    <LowValue>51785.144531250</LowValue>
+    <LowValue>50625.308593750</LowValue>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>KINECT MOTOR ANGLE</Name>
-    <Value>-30.000000000</Value>
+    <Value>-4.285713196</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>SMOOTHING</Name>
-    <Value>1.000000000</Value>
+    <Value>2.627551079</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>SHADOW FILL ALPHA</Name>
+    <Value>83.265304565</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MAX PARTICLES</Name>
+    <Value>10000.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>DAMPING</Name>
+    <Value>0.948979616</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>ROTATION LIFE MULTIPLIER</Name>
+    <Value>0.378061235</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>BLOOM</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>DOF</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER X</Name>
+    <Value>81.632652283</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER Y</Name>
+    <Value>71.428573608</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>WANDER Z</Name>
+    <Value>56.122447968</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>TIME FACTOR</Name>
+    <Value>0.566326559</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MAX STEER AMOUNT</Name>
+    <Value>0.084183671</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MAX SPEED AMOUNT</Name>
+    <Value>0.198979586</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>MIN DISTANCE</Name>
+    <Value>100.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>NUM PARTICLE TARGETS</Name>
+    <Value>50.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>CENTROID RADIUS</Name>
+    <Value>73.469390869</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>Y SCALE</Name>
+    <Value>0.735714316</Value>
 </Widget>

@@ -67,6 +67,6 @@ class testApp : public ofBaseApp{
         bool bFlockToggle ;
         void createFlockFbo ( ofFbo * fbo ) ;
         ofPoint wanderFactor ;
-float timeFactor ; 
+        float timeFactor ; 
     
 };

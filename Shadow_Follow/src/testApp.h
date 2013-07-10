@@ -5,6 +5,9 @@
 #include "ofxCv.h"
 #include "ofxKinect.h"
 #include "ofxUI.h"
+#include "ofxParticle3D.h" 
+#include "ofxPostProcessing.h"
+#include "ofxSimpleTimer.h"
 
 class testApp : public ofBaseApp{
 
@@ -45,9 +48,37 @@ class testApp : public ofBaseApp{
         void hideAllGuis( ) ; 
     
     
-    float smoothingAmount ; 
+        float smoothingAmount ; 
         float minBlobSize , maxBlobSize ;
+        float shadowFillAlpha ;
     
         ofEasyCam cam ;
-
+    
+        void createParticle( ) ;
+        vector< ofPtr<ofxParticle3D> > particles ;
+        float maxParticles ;
+        float damping ;
+    
+        ofxPostProcessing post ;
+    
+        ofImage sprite ;
+        float rotationLifeMultiplier ;
+        float rotation ;
+    
+        ofPoint wanderFactor ;
+        float timeFactor ;
+    
+        ofPoint drawOffset ;
+    
+        float maxSteerAmount ;
+        float maxSpeedAmount ;
+    
+        float minDistance ;
+    
+        ofxSimpleTimer particleTargetTimer ;
+        float numParticleTargets ;
+        void timerCompleteHandler( int &args ) ;
+    
+        float centroidRadius ;
+        float scaleY ; 
 };
